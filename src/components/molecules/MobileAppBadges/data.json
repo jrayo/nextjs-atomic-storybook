@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "title": "Google Play",
+      "url": "svg/badge-play-store.svg",
+      "id": "21"
+    },
+    {
+      "title": "App Store",
+      "url": "svg/badge-app-store.svg",
+      "id": "22"
+    }
+  ]
+}

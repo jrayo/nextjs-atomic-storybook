@@ -1,0 +1,62 @@
+{
+  "name": "nextjs-atomic-storybook",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "start-storybook -s ./public -p 9001",
+    "lint": "eslint src/**/*.js --ext .js --ext .jsx --ext .mjs --ignore-pattern node_modules/ && eslint pages/**/*.js --ext .js --ext .jsx --ext .mjs --ignore-pattern node_modules/",
+    "format": "prettier-eslint --write src/**/*.{js,json} && prettier-eslint pages/**/*.{js,json} --write"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "next": "latest",
+    "next-redux-wrapper": "^6.0.2",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.1",
+    "react-responsive-carousel": "^3.2.9",
+    "redux": "^4.0.5",
+    "styled-components": "^5.1.1"
+    },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@storybook/addon-a11y": "^6.1.15",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-knobs": "^6.1.15",
+    "@storybook/addon-viewport": "^6.1.15",
+    "@storybook/addons": "^6.1.15",
+    "@storybook/react": "^6.1.15",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint 'src/**/*.js' --fix",
+      "eslint 'pages/**/*.js' --fix",
+      "prettier-eslint 'src/**/*.{js,json}' --write",
+      "prettier-eslint 'pages/**/*.{js,json}' --write"
+    ]
+  }
+}

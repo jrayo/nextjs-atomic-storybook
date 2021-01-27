@@ -1,0 +1,18 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["styled-components", { "ssr": true }],
+    ["inline-react-svg", {
+      "svgo": {
+          "plugins": [
+              {
+                  // Avoid react from complaining "Invalid attribute name: `'data-name'`"
+                  "removeAttrs": { "attrs": "(data-name)" }
+              }
+            ]
+          }
+      }
+    ],
+    ["inline-import", { "extension": [".css"] }]
+  ]
+}

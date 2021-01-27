@@ -1,0 +1,70 @@
+{
+  "topList": [
+    {
+      "title": "Order",
+      "url": "/order",
+      "id": "001"
+    },
+    {
+      "title": "Catering",
+      "url": "#",
+      "id": "002"
+    },
+    {
+      "title": "Contact",
+      "url": "#",
+      "id": "003"
+    },
+    {
+      "title": "My Rio Rewards",
+      "url": "#",
+      "id": "004"
+    },
+    {
+      "title": "Gift Cards",
+      "url": "#",
+      "id": "005"
+    },
+    {
+      "title": "Careers",
+      "url": "#",
+      "id": "006"
+    }
+  ],
+  "bottomList": [
+    {
+      "title": "MAP",
+      "url": "#",
+      "id": "007"
+    },
+    {
+      "title": "Contact",
+      "url": "#",
+      "id": "011"
+    }
+  ],
+  "infoList": [
+    {
+      "title": "Privacy Policy",
+      "url": "#",
+      "id": "013"
+    },
+    {
+      "title": "CCPA",
+      "url": "#",
+      "id": "014"
+    }
+  ],
+  "items": [
+    {
+      "title": "Google Play",
+      "url": "svg/badge-play-store.svg",
+      "id": "015"
+    },
+    {
+      "title": "App Store",
+      "url": "svg/badge-app-store.svg",
+      "id": "016"
+    }
+  ]
+}
