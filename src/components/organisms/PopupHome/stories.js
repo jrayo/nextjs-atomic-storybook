@@ -15,10 +15,6 @@ export const Popup768X1024 = () => (
   />
 )
 
-export const Popup600x800 = () => (
-  <PopupHome src="images/bg-popup-home.png" alt="Promotional image" />
-)
-
 export const Popup480X640 = () => (
   <PopupHome
     src="https://via.placeholder.com/480x640/FFFFFF"

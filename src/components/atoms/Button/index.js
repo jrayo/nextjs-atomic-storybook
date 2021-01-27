@@ -2,17 +2,17 @@ import styled from 'styled-components'
 import { func, node, bool, string } from 'prop-types'
 import Icons from '../Icon/Icons'
 
-const ButtonIcon = ({ name }) => {
+const ButtonIcon = ({ name, width, height }) => {
   // If icon name value doesn't match Icons object keys then return null
   if (Icons[name] === undefined) return null
   const Icon = Icons[name]
-  return <Icon alt={name} aria-label={`${name} icon`} />
+  return <Icon alt={name} aria-label={`${name} icon`} width={width || height} height={height || width} />
 }
 
-const ButtonComponent = ({ onClick, icon, children, ...otherProps }) => {
+const ButtonComponent = ({ onClick, icon, children, width, height, ...otherProps }) => {
   return (
     <Button onClick={onClick} icon={icon} {...otherProps}>
-      {icon && <ButtonIcon name={icon} />}
+      {icon && <ButtonIcon name={icon} width={width} size={height} />}
       {children && <span>{children}</span>}
     </Button>
   )

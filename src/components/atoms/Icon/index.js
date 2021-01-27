@@ -17,6 +17,8 @@ const StyledIcon = styled.button`
   background: ${(props) => (props.color ? props.color : 'white')};
   border: none;
   padding: 5px;
+  width: 30px;
+  height: 30px;
   &:hover {
     cursor: pointer;
     background: ${({ theme, noHover }) =>

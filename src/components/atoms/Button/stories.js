@@ -45,8 +45,8 @@ export const Tertiary = () => <Button tertiary>TERTIARY</Button>
 export const Disabled = () => <Button disabled>DISABLED</Button>
 
 export const WithIcon = () => (
-  <Button tertiary icon="user">
-    SIGN IN & EARN REWARDS
+  <Button tertiary icon="user" width="30px" height="30px">
+    Login
   </Button>
 )
 
@@ -55,5 +55,3 @@ export const WithAlert = () => (
     LINKED
   </Button>
 )
-
-export const IconButton = () => <Button tertiary icon="close" />

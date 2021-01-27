@@ -1,12 +1,12 @@
 {
   "topList": [
     {
-      "title": "Order",
+      "title": "Services",
       "url": "/order",
       "id": "001"
     },
     {
-      "title": "Catering",
+      "title": "Menu",
       "url": "#",
       "id": "002"
     },
@@ -16,19 +16,9 @@
       "id": "003"
     },
     {
-      "title": "My Rio Rewards",
+      "title": "Blog",
       "url": "#",
       "id": "004"
-    },
-    {
-      "title": "Gift Cards",
-      "url": "#",
-      "id": "005"
-    },
-    {
-      "title": "Careers",
-      "url": "#",
-      "id": "006"
     }
   ],
   "bottomList": [

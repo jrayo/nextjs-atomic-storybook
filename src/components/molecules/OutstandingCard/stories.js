@@ -16,7 +16,7 @@ const actionButton = {
   href: '/'
 }
 const image = {
-  imageURL: 'images/bg-about.png',
+  imageURL: 'https://via.placeholder.com/480x640/FFFFFF',
   alt: 'Mexican Food'
 }
 

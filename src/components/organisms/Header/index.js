@@ -35,7 +35,7 @@ const Header = ({ navigationItems }) => (
     <LeftSide>
       <img src="/images/nextjs-logo.png" alt="logo" width="40px" />
 
-      <Button tertiary icon="user">
+      <Button tertiary icon="user" width="30px" height="30px">
         Login
       </Button>
     </LeftSide>
